@@ -43,7 +43,10 @@ bruce_lee.chop(10) # => -1
 
 ```
 
-Note: We are not worried about performance.
+Note:
+- We are not worried about performance.
+- We cannot use any of Ruby's built in search methods.
+  Array#index, Array#include? etc
 
 Extra Credit
 ============
