@@ -1,9 +1,11 @@
-Binary Chop - aka Binary Search,
+Binary Chop - aka Binary Search
 ===========
 
 Ah, Sweet sweet Algorithms!  In this dojo we will be implementing a binary chop or better known as a binary
 search algorithm. We will be searching for a number from an array of sorted numbers. If the number is found
 then we will return the index value of the number. If the number is not found then we will return -1
+
+Note: Implement the search iteratively
 
 What is a Binary Chop?
 =====================
@@ -41,3 +43,8 @@ bruce_lee.chop(10) # => -1
 
 ```
 
+Note: We are not worried about performance.
+
+Extra Credit
+============
+Implement the search using recursion.
