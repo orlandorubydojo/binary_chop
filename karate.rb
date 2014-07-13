@@ -1,0 +1,3 @@
+class Karate
+
+end
