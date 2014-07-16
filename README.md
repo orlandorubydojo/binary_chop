@@ -51,3 +51,7 @@ Note:
 Extra Credit
 ============
 Implement the search using recursion.
+
+Recursion version
+============
+[![Build Status](https://travis-ci.org/blackbumer/binary_chop.png?branch=master)](https://travis-ci.org/blackbumer/binary_chop) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/blackbumer/binary_chop)
