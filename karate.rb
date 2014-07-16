@@ -8,7 +8,7 @@ class Karate
   
   def middle_of_range(range = @default_range)
     if range.size>0
-      return range.max == range.min ? range.max : (range.max-range.min) / 2
+      return range.min + (range.max-range.min) / 2
     else
       return nil
     end

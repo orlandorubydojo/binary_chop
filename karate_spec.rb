@@ -50,6 +50,13 @@ describe Karate do
         expect(k.middle_of_range(0..0)).to eq(0)
       end
       
+      it "returns middle of custom range" do
+        k = Karate.new([])
+        expect(k.middle_of_range(1..3)).to eq(2)
+        expect(k.middle_of_range(1..4)).to eq(2)
+        expect(k.middle_of_range(2..5)).to eq(3)
+      end
+      
   end
   
   describe :left_range do
@@ -76,4 +83,14 @@ describe Karate do
     end
   end
   
+  describe :chop do
+    it "should pass tests from doc readme" do
+      numbers = (1..5).to_a
+
+      bruce_lee = Karate.new(numbers)
+      expect(bruce_lee.chop(1)).to eq(0)
+      expect(bruce_lee.chop(5)).to eq(4)
+      expect(bruce_lee.chop(10)).to eq(-1)
+    end
+  end
 end
