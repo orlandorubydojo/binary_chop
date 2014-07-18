@@ -5,7 +5,7 @@ class Karate
 end
 
 describe Karate do
-  
+  before(:all) {Karate.send(:public, *Karate.private_instance_methods)}
   describe :initialize do
   
     it "stores sorted array in variable" do
@@ -21,7 +21,6 @@ describe Karate do
   end
   
   describe :middle_of_range do
-    
       it "returns nil for empty array" do
         expect(Karate.new([]).middle_of_range).to be_nil
       end
@@ -93,4 +92,16 @@ describe Karate do
       expect(bruce_lee.chop(10)).to eq(-1)
     end
   end
+  
+  describe :chop_without_recursion do
+    it "should pass tests from doc readme" do
+      numbers = (1..5).to_a
+
+      bruce_lee = Karate.new(numbers)
+      expect(bruce_lee.chop_without_recursion(1)).to eq(0)
+      expect(bruce_lee.chop_without_recursion(5)).to eq(4)
+      expect(bruce_lee.chop_without_recursion(10)).to eq(-1)
+    end
+  end
+
 end
