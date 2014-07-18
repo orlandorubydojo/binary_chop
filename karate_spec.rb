@@ -1,11 +1,10 @@
 require './karate.rb'
 
-class Karate
-  attr_accessor :sorted_array, :default_range
-end
-
 describe Karate do
-  before(:all) {Karate.send(:public, *Karate.private_instance_methods)}
+  before :all do
+     Karate.send(:public, *Karate.private_instance_methods)
+     Karate.send(:attr_accessor, :sorted_array, :default_range)
+  end
   describe :initialize do
   
     it "stores sorted array in variable" do
