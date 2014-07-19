@@ -2,4 +2,4 @@
 language: ruby
 rvm:
   - 2.0.0
-script: rspec karate_spec.rb  
+script: bundle exec rspec karate_spec.rb  
