@@ -35,7 +35,7 @@ class Karate
     end
     -1
   end
-
+  
   private
   
   def middle_of_range(range = @default_range)
