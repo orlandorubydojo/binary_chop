@@ -8,4 +8,5 @@ guess = rand(max)
 Benchmark.bm(30) do |x|
   x.report("chop using recursion")  { bruce_lee.chop(guess) }
   x.report("chop using loop")       { bruce_lee.chop_without_recursion(guess) }
+  x.report("chop using ruby bsearch") { array.bsearch {|х| x == guess } }
 end
